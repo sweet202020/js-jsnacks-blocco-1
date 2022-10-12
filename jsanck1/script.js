@@ -8,9 +8,14 @@ const secondNumber = prompt ('scrivi il secondo numero');
 //Il software stampa il maggiore
 //utilizzo il costrutto if e stampo il numero più greande
 if (firstNumber>secondNumber){
-    console.log(" il numero più grande è: " + firstNumber);
+    const first = (" il numero più grande è: " + firstNumber);
+    document.querySelector('p').innerHTML=(first)
 } else if (secondNumber>firstNumber){
-    console.log(" il numero più grande è: " + secondNumber);
+    const second = (" il numero più grande è: " + secondNumber);
+    document.querySelector('p').innerHTML=(second)
+
 } else {
-    console.log ("i numeri sono uguali");
+    const same = ("i numeri sono uguali");
+    document.querySelector('p').innerHTML=(same)
+
 }
