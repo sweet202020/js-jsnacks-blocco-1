@@ -3,9 +3,13 @@ const firstWord = prompt('inserisci la prima parola')
 const secondWord = prompt('inserisci la seconda parola')
 //Il software stampa prima la parola più corta, poi la parola più lunga. 
 if (firstWord.length>secondWord.length){
-    console.log(secondWord + ' ' + firstWord);
+    const first=(secondWord + ' ' + firstWord);
+    document.querySelector('p').innerHTML=first
 } else if (secondWord.length>firstWord.length){
-    console.log(firstWord + ' ' + secondWord);
+    const second = (firstWord + ' ' + secondWord);
+    document.querySelector('p').innerHTML=second
+
 } else {
-    console.log('le due parole hanno lunghezze uguali');
+    const same = ('le due parole hanno lunghezze uguali');
+    document.querySelector('p').innerHTML=same
 }
