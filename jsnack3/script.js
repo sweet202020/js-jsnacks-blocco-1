@@ -20,7 +20,7 @@ while(condizione){
 */
 
 let somma=0;
-i=0;
+let i=0;
 while (i<10){
     const num = Number(prompt('inserisci un numero'));
     (somma+=num);
